@@ -1,8 +1,8 @@
  Webpack custom deploy plugin
 ============================
 
-Once webpack generates a bundle you can do anything with its content.
-It saves time because you do not need any watchers and reading from hard drive.
+Once webpack generates a bundle you can deploy it or do anything with its content.
+This plugin saves your time because you do not need any watchers and reading from hard drive.
 
  Example usage
 --------------------------------
