@@ -1,8 +1,8 @@
  Webpack custom deploy plugin
 ============================
 
-Once webpack generates a bundle you can deploy it or do anything with its content.
-This plugin saves your time because you do not need any watchers and reading from hard drive.
+As soon as webpack generated a bundle you can deploy it or do anything with its content.
+This plugin saves you some time because you do not need any watchers or reading from hard drive.
 
  Example usage
 --------------------------------
@@ -35,11 +35,11 @@ plugins: [
   { entry: 'anotherIndexFile.js', path: ['serverPath', 'to', 'anotherIndexFile.js'], isProduction: false },
 ```
 
-Entries from ```destinationMapping``` option corresponds to webpack entries.
+```entry```-s from ```destinationMapping```-option corresponds to **webpack entries**.
 ```isProductionMode: true/false``` tells plugin if it is a production build.
-Entries marked with ```isProductionMode: true``` is only delivered in production mode.
-This prevents you from accidental overwriting of production files.
+```entry```-s marked with ```isProductionMode: true``` is only delivered in production mode.
+This prevents you from accidental writing to production files.
 
 
 ### deployer()
-```deployer``` property should be either return a Promise or be an asynchronous function.
+```deployer``` property should either return a Promise or to be an asynchronous function.
